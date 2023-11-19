@@ -2,48 +2,15 @@
 {% extends "webpages/base.html" %}
 {% block content %}
 <div class="container aos-init aos-animate">
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <!-- {% if plot %}
+  {{ plot }}
+  {% else %}
+  <h1>No plot</h1>
+  {% endif %} -->
+
+  {% autoescape off %}
+  {{ plot }}
+  {% endautoescape %}
   <br>
 </div>
 
