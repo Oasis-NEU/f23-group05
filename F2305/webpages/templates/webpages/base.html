@@ -27,6 +27,8 @@
 
     <!-- loading static file -->
     <link rel="stylesheet" type="text/css" href="{% static 'webpages/oasis.css' %}" />
+    Animation Library
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     {% if title %}
     <title>Dining - {{ title }}</title>
@@ -114,5 +116,11 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script 
+      src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
