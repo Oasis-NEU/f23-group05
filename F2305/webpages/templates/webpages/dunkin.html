@@ -1,28 +1,18 @@
-
 {% extends "webpages/base.html" %}
 {% block content %}
+
+<div class="container mt-5">
+  <div class="alert alert-primary bg-info text-white">
+    Dunkin' Donuts - Shillman Hall
+  </div>
+</div>
+
 <div class="container aos-init aos-animate">
-  <!-- {% if plot %}
-  {{ plot }}
-  {% else %}
-  <h1>No plot</h1>
-  {% endif %} -->
 
   {% autoescape off %}
   {{ plot }}
   {% endautoescape %}
   <br>
-</div>
-
-<div class="container">
-  <ul class="nav bg-info">
-    <li class="nav-item">
-      <a class="nav-link link-light" href="/">HOME</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-light" href="/members">MEMBERS</a>
-    </li>
-  </ul>
 </div>
 
 <div class="container aos-init aos-animate" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="50">
@@ -33,95 +23,113 @@
   </div>
 
   <div class="mb-3">
-    <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen=""></iframe>
+    <iframe style="border:0; width: 100%; height: 350px;"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4368.269895031149!2d-71.09104593887231!3d42.33588850320651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e379e8a5806981%3A0xe47fb695cd094cdd!2sDunkin&#39;!5e0!3m2!1sen!2sus!4v1701545361456!5m2!1sen!2sus"
+      frameborder="0" allowfullscreen=""></iframe>
   </div><!-- End Google Maps -->
 
-  <div class="row gy-4">
+  <div class="row">
 
-    <div class="col-md-6">
+    <div class="col-md-4">
       <div class="info-item  d-flex align-items-center">
         <i class="icon bi bi-map flex-shrink-0"></i>
         <div>
-          <h3>Our Address</h3>
-          <p>A108 Adam Street, New York, NY 535022</p>
+          <h3>Location Address</h3>
+          <p>115 Forsyth St. Northeastern - Shillman Hall</p>
         </div>
       </div>
     </div><!-- End Info Item -->
 
-    <div class="col-md-6">
-      <div class="info-item d-flex align-items-center">
-        <i class="icon bi bi-envelope flex-shrink-0"></i>
-        <div>
-          <h3>Email Us</h3>
-          <p>contact@example.com</p>
-        </div>
-      </div>
-    </div><!-- End Info Item -->
-
-    <div class="col-md-6">
+    <div class="col-md-4">
       <div class="info-item  d-flex align-items-center">
         <i class="icon bi bi-telephone flex-shrink-0"></i>
         <div>
-          <h3>Call Us</h3>
-          <p>+1 5589 55488 55</p>
+          <h3>Call Location</h3>
+          <p>+1 (617) 373-8414</p>
         </div>
       </div>
     </div><!-- End Info Item -->
 
-    <div class="col-md-6">
+    <div class="col-md-4">
       <div class="info-item  d-flex align-items-center">
         <i class="icon bi bi-share flex-shrink-0"></i>
         <div>
           <h3>Opening Hours</h3>
-          <div><strong>Mon-Sat:</strong> 11AM - 23PM;
-            <strong>Sunday:</strong> Closed
+          <div><strong>Mon-Fri:</strong> 7AM - 7PM;
+            <strong>Saturday-Sunday:</strong> Closed
           </div>
         </div>
       </div>
     </div><!-- End Info Item -->
 
   </div>
-
-  <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
-    <div class="row">
-      <div class="col-xl-6 form-group">
-        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
-      </div>
-      <div class="col-xl-6 form-group">
-        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
-      </div>
-    </div>
-    <div class="form-group">
-      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
-    </div>
-    <div class="form-group">
-      <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
-    </div>
-    <div class="my-3">
-      <div class="loading">Loading</div>
-      <div class="error-message"></div>
-      <div class="sent-message">Your message has been sent. Thank you!</div>
-    </div>
-    <div class="text-center"><button type="submit">Send Message</button></div>
-  </form><!--End Contact Form -->
-
 </div>
-<!-- <p>
-    <h2> Hours </h2>
-    Mon: 7:00 AM - 7:00 PM
-    <br>
-    Tues: 7:00 AM - 7:00 PM
-    <br>
-    Wed: 7:00 AM - 7:00 PM
-    <br>
-    Thurs: 7:00 AM - 7:00 PM
-    <br>
-    Fri:  7:00 AM - 7:00 PM
-    <br>
-    Sat: Closed
-    <br>
-    Sun: Closed
-  </p>
 
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11796.123180754348!2d-71.0864555!3d42.3418668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a18617ab135%3A0x46cb10a2aa1ff8d6!2sDunkin&#39;!5e0!3m2!1sen!2sus!4v1697996674715!5m2!1sen!2sus" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+<div class="container mt-3">
+  <hr></hr>
+</div>
+
+
+<div class="container mt-3">
+  <div class="alert alert-primary bg-info text-white">
+    Dunkin' Donuts - Ruggles
+  </div>
+</div>
+
+<div class="container aos-init aos-animate">
+
+  {% autoescape off %}
+  {{ plot2 }}
+  {% endautoescape %}
+</div>
+
+<div class="container aos-init aos-animate" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="50">
+
+  <div class="section-header">
+    <h2>Contact</h2>
+    <p>Need Help? <span>Contact Us</span></p>
+  </div>
+
+  <div class="mb-3">
+    <iframe style="border:0; width: 100%; height: 350px;"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2771.249301312651!2d-71.08948590437932!3d42.338928347433466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a230f2f5c59%3A0xb6970115d51c0174!2sDunkin&#39;!5e0!3m2!1sen!2sus!4v1701545964603!5m2!1sen!2sus"
+      frameborder="0" allowfullscreen=""></iframe>
+  </div><!-- End Google Maps -->
+
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="info-item  d-flex align-items-center">
+        <i class="icon bi bi-map flex-shrink-0"></i>
+        <div>
+          <h3>Location Address</h3>
+          <p>1131 Tremont St. Ruggles T Station</p>
+        </div>
+      </div>
+    </div><!-- End Info Item -->
+
+    <div class="col-md-4">
+      <div class="info-item  d-flex align-items-center">
+        <i class="icon bi bi-telephone flex-shrink-0"></i>
+        <div>
+          <h3>Call Location</h3>
+          <p>+1 (617) 536-7447</p>
+        </div>
+      </div>
+    </div><!-- End Info Item -->
+
+    <div class="col-md-4">
+      <div class="info-item  d-flex align-items-center">
+        <i class="icon bi bi-share flex-shrink-0"></i>
+        <div>
+          <h3>Opening Hours</h3>
+          <div>
+            <strong>Mon-Sun:</strong> 6AM - 3PM
+          </div>
+        </div>
+      </div>
+    </div><!-- End Info Item -->
+
+  </div>
+</div>
 {% endblock %}
