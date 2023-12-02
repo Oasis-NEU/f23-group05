@@ -10,7 +10,7 @@ def webpageDunkin(request):
 
     data=[[1, 25, 30, 50, 1], [20, 1, 60, 80, 30], [30, 60, 1, 5, 20], [2, 39, 37, 87, 88]]
     fig = px.imshow(data,
-                    labels=dict(x="Day of Week", y="Time of Day", color="Productivity"),
+                    labels=dict(x="Day of Week", y="Time of Day", color="Busyness"),
                     x=['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
                     y=['12pm', '1pm', '2pm', '3pm'],
                 )
